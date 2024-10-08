@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barone Control - Fumigaciones en Posadas</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Barone Control</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#about">Sobre Nosotros</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="img/logo.png" alt="Barone Control Logo" class="logo-image">
+            <h1>Control de Plagas en Posadas, Misiones</h1>
+            <p>Fumigaciones eficientes y seguras para tu hogar y negocio.</p>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Nuestros Servicios</h2>
+        <div class="service-card">
+            <i class="fas fa-home"></i>
+            <h3>Fumigación para el hogar</h3>
+            <p>Elimina plagas comunes como cucarachas, pulgas y mosquitos con nuestro servicio profesional.</p>
+            <a href="#contact" class="cta-button">Solicitar Presupuesto</a>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-building"></i>
+            <h3>Fumigación para negocios</h3>
+            <p>Protege tu empresa con nuestros paquetes de mantenimiento y servicio rápido.</p>
+            <a href="#contact" class="cta-button">Solicitar Presupuesto</a>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-shield-alt"></i>
+            <h3>Fumigación Preventiva</h3>
+            <p>Prevención de plagas anualmente para mantener tu entorno seguro.</p>
+            <a href="#contact" class="cta-button">Solicitar Presupuesto</a>
+        </div>
+    </section>
+
+    <section class="about">
+        <h2>Sobre Nosotros</h2>
+        <div class="about-container">
+            <div class="about-info">
+                <h3>En Barone Control</h3>
+                <p>Entendemos que la comodidad y la salud de tu hogar o negocio son lo más importante. Como ingeniero agrónomo con experiencia, me comprometo a ofrecer soluciones de fumigación efectivas y seguras para proteger tu espacio de plagas indeseadas.</p>
+                
+                <p>Nuestro equipo está formado por expertos apasionados, utilizando técnicas innovadoras y productos adecuados para garantizar que tu hogar o negocio no solo esté libre de plagas, sino también seguro para ti y tu familia.</p>
+            </div>
+            
+            <div class="why-choose">
+                <h3>¿Por qué elegir Barone Control?</h3>
+                <ul>
+                    <li><strong>Compromiso con la calidad:</strong> Cada servicio se realiza con atención al detalle y el máximo cuidado, asegurando resultados óptimos.</li>
+                    <li><strong>Soluciones personalizadas:</strong> Sabemos que cada hogar es único, por eso ofrecemos un enfoque adaptado a tus necesidades específicas.</li>
+                    <li><strong>Asesoramiento experto:</strong> Te brindamos información valiosa sobre cómo prevenir futuras infestaciones, porque tu tranquilidad es nuestra prioridad.</li>
+                </ul>
+                <p><strong>¡Deja que Barone Control cuide de tu hogar o negocio!</strong> Contacta con nosotros y descubre cómo podemos ayudarte a mantener un ambiente saludable y libre de plagas. Tu satisfacción es nuestra misión.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="contact" class="contact">
+        <h2>Contacto</h2>
+        <form id="contact-form" onsubmit="sendWhatsApp(); return false;">
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+            <input type="email" id="email" name="email" placeholder="Tu email" required>
+        
+            <label for="service-type">Tipo de Servicio:</label>
+            <select id="service-type" name="service-type" required>
+                <option value="" disabled selected>Selecciona un servicio</option>
+                <option value="hogar">Fumigación para el hogar</option>
+                <option value="negocios">Fumigación para negocios</option>
+                <option value="preventiva">Fumigación Preventiva</option>
+            </select>
+        
+            <textarea id="message" name="message" placeholder="Tu mensaje" required></textarea>
+            <button type="submit">Enviar a WhatsApp</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Barone Control. Todos los derechos reservados.</p>
+        <div class="social-media">
+        <a class="whatsapp-button" href="https://wa.me/3765188420?text=¡Hola! Quiero obtener más información sobre Barone Control-Fumigaciones." target="_blank">WhatsApp</a>
+        </div>
+    </footer>
+</body>
+</html>
